@@ -1,0 +1,519 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #eadbca;
+    --accent-color: #f75403;
+    --main-background-dark: #494966;
+    --main-background-light: #2c2c3f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    cursor: default;
+}
+
+/* Common */
+
+section {
+    padding: 0 5vw;
+}
+
+.vh100 {
+    height: 105vh;
+}
+
+.vh90 {
+    height: 90vh;
+}
+
+.vh80 {
+    height: 80vh;
+}
+
+.vh70 {
+    height: 70vh;
+}
+
+.vh60 {
+    height: 60vh;
+}
+
+.vh50 {
+    height: 50vh;
+}
+
+.section_light {
+    background-color: var(--main-background-dark);
+}
+
+.section_dark {
+    background-color: var(--main-background-light);
+}
+
+.accent {
+    color: var(--accent-color);
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 10vw;
+    color: var(--text-color);
+    font-family: 'hagrid_text_trialextrabold';
+}
+
+h2 {
+    font-size: 3vw;
+    color: var(--text-color);
+    font-family: 'hagrid_trialregular';
+}
+
+p, a {
+    font-size: 2vw;
+    color: var(--text-color);
+    font-family: 'armin_groteskregular';
+    text-decoration: none;
+}
+
+.compatible {
+    font-family: 'armin_groteskregular';
+}
+
+.h2 {
+    padding-top: 50px;
+}
+
+.center {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.vNav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 40%;
+    right: -50px;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+.vNav img {
+    width: 50px;
+    height: 50px;
+    opacity: 60%;
+    transition: all 0.3s;
+}
+
+.vNav img:hover {
+    opacity: 100%;
+}
+
+/* Section 1 */
+
+.logo {
+    position: absolute;
+    width: 8vw;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    right: 10vw;
+    z-index: 2;
+}
+
+nav a {
+    font-size: 2.5vw;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+    margin-left: 2vw;
+}
+
+nav a:visited {
+    color: var(--text-color);
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    text-shadow: 4px 6px 2px rgb(54, 54, 54);
+}
+
+.circle {
+    position: absolute;
+    top: 7vw;
+    left: 12%;
+    height: 18vw;
+    width: 18vw;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+}
+
+.headerText {
+    padding: 5vw 7vw;
+}
+
+header h1 {
+    margin: auto;
+}
+
+.based {
+    font-size: 3.2vw;
+    margin: -7vw auto 0 auto;
+}
+
+/* Section 2 */
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.about p {
+    width: 60%;
+}
+
+.about_me_p {
+    width: 70%;
+}
+
+.downloadDiv {
+    align-self: flex-start;
+    margin-top: 50px;
+}
+
+.download {
+    padding: 5px 10px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    font-family: 'armin_groteskregular';
+    color: var(--text-color);
+}
+
+.horizontal {
+    width: 25vw;
+}
+
+.vertical {
+    width: 18vw;
+}
+
+/* Section 3 */
+
+.work {
+    display: flex;
+    margin: auto;
+    padding: 50px 0;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.work_card {
+    cursor: pointer;
+    width: 30vw;
+    transition: all 0.3s ease-out;
+}
+
+.work_card:hover {
+    box-shadow: 0 0 15px 5px #22222f;
+}
+
+.work_img {
+    background-color: var(--accent-color);
+    width: 30vw;
+}
+
+.work_card>p {
+    padding: 15px 20px;
+    font-size: 1.5vw;
+}
+
+/* Section 4 */
+
+.space {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 60%;
+}
+
+input[type=text], input[type=email] {
+    width: 45%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid #eadbca;
+    background: none;
+}
+
+textarea {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: solid #eadbca;
+    background: none;
+}
+
+input[type=submit] {
+    padding: 8px 15px;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+::placeholder, input, textarea {
+    color: var(--text-color);
+    font-size: 1.5vw;
+    font-family: armin_groteskregular;
+    outline: none;
+}
+
+::placeholder {
+    opacity: 50%;
+}
+
+/* Work html */
+
+.align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_big {
+    width: 80%;
+    font-size: 5vw;
+    font-family: 'hagrid_text_trialextrabold';
+    margin-top: 150px;
+    line-height: 6vw;
+
+}
+
+.line {
+    width: 250px;
+    border-bottom: 2px solid var(--text-color);
+    margin-bottom: 2vw;
+}
+
+.process {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 6vw 22vw 22vw;
+    grid-gap: 50px;
+}
+
+.item1 {
+    grid-column: 1/3;
+}
+
+.process img {
+    max-width: 100%;
+}
+
+.small {
+    text-align: center;
+    font-size: 25px;
+}
+
+.margin {
+    margin: 150px 150px;
+}
+
+.paddingBot {
+    padding-bottom: 50px;
+}
+
+.intro p {
+    width: 70%;
+}
+
+.intro img {
+    width: 20vw;
+    height: 10vw;
+    align-self: center;
+    margin-left: 100px;
+}
+
+.flex {
+    display: flex;
+}
+
+.solutionP {
+    width: 60%;
+}
+
+@media (max-width: 950px) {
+    .vNav {
+        display: none;
+    }
+    nav a {
+        font-size: 3.5vw;
+    }
+    .h2 {
+        font-size: 5vw;
+        padding-top: 5px;
+    }
+    .circle {
+        top: 10vw;
+    }
+    header {
+        padding-top: 7vw;
+    }
+    .headerText {
+        padding: 5vw 2vw;
+    }
+    p {
+        font-size: 3.5vw;
+    }
+    section {
+        padding: 0 5vw;
+    }
+    #about {
+        display: block;
+        margin: auto;
+    }
+    .about p {
+        margin: 2vw 0;
+        width: 100%;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    #about img {
+        display: none;
+    }
+    .downloadDiv {
+        padding: 30px 0;
+        margin: auto;
+        text-align: center;
+    }
+    .download {
+        padding: 15px;
+        font-size: 3vw;
+    }
+    .work {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    #work h2 {
+        font-size: 5vw;
+    }
+    .work_card {
+        width: 80%;
+    }
+    .work_card img {
+        width: 100%;
+    }
+    .work_card p {
+        font-size: 2.5vw;
+    }
+    .center {
+        padding-top: 1vw;
+    }
+    .space {
+        flex-direction: column;
+        width: 80%;
+    }
+    #contact h2 {
+        font-size: 5vw;
+    }
+    input[type=text], input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+    }
+    textarea {
+        width: 80%;
+    }
+    ::placeholder, input, textarea {
+        font-size: 2.5vw;
+    }
+
+    /* ----------------- */
+    .title_big{
+        font-size: 6vw;
+    }
+
+    .intro p {
+        width: 100%;
+    }
+    
+    .paddingBot {
+        padding-bottom: 3vwpx;
+    }
+
+    .process {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .solutionP{
+        width: 100%;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+    .margin{
+        margin: 5vw;
+    }
+
+    .intro img {
+        height: 80px;
+        width: 200px;
+        margin-left: 0;
+        margin-bottom: 3vw;
+    }
+}
+
+/*! Generated by Font Squirrel (https://www.fontsquirrel.com) on April 25, 2020 */
+
+@font-face {
+    font-family: 'hagrid_text_trialextrabold';
+    src: url('assets/fonts/hagrid-text-extrabold-trial-webfont.woff2') format('woff2'), url('assets/fonts/hagrid-text-extrabold-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hagrid_trialregular';
+    src: url('assets/fonts/hagrid-regular-trial-webfont.woff2') format('woff2'), url('assets/fonts/hagrid-regular-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'armin_groteskregular';
+    src: url('assets/fonts/armin_grotesk_regular-webfont.woff2') format('woff2'), url('assets/fonts/armin_grotesk_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'armin_groteskitalic';
+    src: url('assets/fonts/armin_grotesk_italic-webfont.woff2') format('woff2'), url('assets/fonts/armin_grotesk_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

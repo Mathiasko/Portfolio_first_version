@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <script src="script.js" defer></script>
+    <link rel="chortcut icon" type="img/svg" href="assets/images/logo.svg">
+</head>
+
+<body id="home">
+    <img class="logo" src="assets/images/logo.svg" alt="logo">
+
+    <div class="vNav">
+        <a href="#home">
+            <img src="assets/images/icons/home_1.png" alt="">
+        </a>
+        <a href="#about">
+            <img src="assets/images/icons/profile_1.png" alt="">
+        </a>
+        <a href="#work">
+            <img src="assets/images/icons/work_1.png" alt="">
+        </a>
+        <a href="#contact">
+            <img src="assets/images/icons/contact_1.png" alt="">
+        </a>
+    </div>
+
+    <section id="header" class="section_light">
+        <nav>
+            <a href="#about">about</a>
+            <a href="#work">work</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="circle"></div>
+
+        <header>
+            <h1 class="name">MATUS LACO</h1>
+            <p class="based">front end detveloper based in Aalborg, Denmark</p>
+        </header>
+
+        <div class="headerText">
+            <h2><span class="compatible">&#60;h1&#62;</span>Hello World!<span class="compatible">&#60;/h1&#62;</span>
+            </h2>
+            <p>
+                My name is Matus and I am studying Multimedia design at UCN in Aalborg, Denmark with focus on <span
+                    class="accent">front-end development</span>. My passion is technology - both software and hardware.
+            </p>
+        </div>
+    </section>
+
+    <section id="about" class="section_dark about">
+        <div>
+            <h2 class="h2">More about me</h2>
+            <p class="about_me_p">
+                As far as I can remember I’ve been interested in <span class="accent">computers</span>, I wanted to know
+                everything about them. In past few years I’ve been dipping my toast into many different aspects from
+                <span class="accent">coding</span> in different programming languages through creating and editing
+                content in
+                Adobe suite to building computers and repairing phones. Apart from my obsession with technology I love
+                <span class="accent">cats</span> and baking pizza.
+            </p>
+        </div>
+        <div class="downloadDiv">
+            <a class="download" href="cv.pdf" download>Download my CV!</a>
+        </div>
+
+
+        <img class="aboutImg2 horizontal" src="assets/images/computer.jpg" alt="">
+        <img class="aboutImg3 vertical" src="assets/images/cat.jpg" alt="">
+        <img class="aboutImg1 vertical" src="assets/images/photo.jpg" alt="">
+
+    </section>
+
+    <section id="work" class="section_light">
+        <h2 class="center">My work</h2>
+
+        <div class="work">
+            <a href="work1.html" class="work_card">
+                <img class="work_img" src="assets/images/svalegarden.jpg" alt="">
+                <p>Website redesign for Svalegaarden Mest restaurant</p>
+            </a>
+            <a href="work2.html" class="work_card">
+                <img class="work_img" src="assets/images/musicFestival.jpg" alt="">
+                <p>Reusable website for Ungdomsringen MusikFestival</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="section_dark">
+        <h2 class="center">Contact me</h2>
+        <div class="center">
+            <div class="space">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <textarea placeholder="message" rows="8"></textarea>
+            <br>
+            <input type="submit" value="Send">
+        </div>
+    </section>
+</body>
+
+</html>
